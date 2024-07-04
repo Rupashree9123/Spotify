@@ -1,77 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="common-style.css">
+    <link rel="stylesheet" href="common-style.css" />
     <title>Spotify</title>
-</head>
-<body class="bg-black text-slate-300">
+  </head>
+  <body class="bg-black text-slate-300">
     <!-- page main container start -->
     <div class="flex gap-2 w-[100vw] h-[100vh] p-2">
-        <!-- left sidebar start -->
-        <section class="w-[25vw] flex flex-col gap-2">
-            <div class="flex flex-col justify-center gap-5 h-[30%] bg-[#141414] rounded-lg font-semibold p-3">
-                <div class="flex items-center pl-3"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/FFFFFF/spotify.png" alt="spotify"/><span class="text-white">Spotify</span></div>
-                <div class="flex items-center gap-4 hover:text-white pl-3"><img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/home.png" alt="home"/><a href="#">Home</a></div>
-                <div class="flex items-center gap-4 hover:text-white pl-3"><img width="28" height="28" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/search--v1.png" alt="search--v1"/><a href="#">Search</a></div>
+      <!-- left sidebar start -->
+      <section class="w-[25vw] flex flex-col gap-2">
+        <div
+          class="flex flex-col justify-center gap-5 h-[30%] bg-[#141414] rounded-lg font-semibold p-3"
+        >
+          <div class="flex items-center pl-3">
+            <img
+              width="25"
+              height="25"
+              src="https://img.icons8.com/ios-filled/50/FFFFFF/spotify.png"
+              alt="spotify"
+            /><span class="text-white">Spotify</span>
+          </div>
+          <div class="flex items-center gap-4 hover:text-white pl-3">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/home.png"
+              alt="home"
+            /><a href="#">Home</a>
+          </div>
+          <div class="flex items-center gap-4 hover:text-white pl-3">
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/ios-glyphs/30/FFFFFF/search--v1.png"
+              alt="search--v1"
+            /><a href="#">Search</a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-3 px-3 h-[70%] bg-[#141414] rounded-lg text-slate-300 font-semibold"
+        >
+          <!-- your library section start -->
+          <div class="flex justify-between items-center pt-3 pb-3">
+            <div class="flex items-center gap-2">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/courses.png"
+                alt="courses"
+              /><span class="hover:text-white">Your library</span>
             </div>
-            <div class="flex flex-col gap-3 px-3 h-[70%] bg-[#141414] rounded-lg text-slate-300 font-semibold">
-                <!-- your library section start -->
-                <div class="flex justify-between items-center pt-3 pb-3">
-                    <div  class="flex items-center gap-2"><img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/courses.png" alt="courses"/><span class="hover:text-white">Your library</span></div>
-                    <img width="15" height="15" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/plus-math.png" alt="plus-math"/>
-                </div>
-                  <!-- your library section end -->
-                <div class="flex flex-col gap-2 p-4 rounded-lg bg-[#242424] text-white ">
-                    <span class="">Create your first playlist</span>
-                    <span class="">Easy! We will help you</span>
-                    <button class="bg-white text-black rounded-3xl w-[50%] px-1 py-1 mt-3 transform transition-transform hover:scale-[107%]" type="button">Create Playlist</button>
-                </div>
-                <div class="links_container flex gap-5 flex-wrap text-white p-4 pl-4">
-                    <a href="#">Legal</a>
-                    <a href="#">Safety & Privacy Center</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Cookies</a>
-                    <a href="#">About Ads</a>
-                    <a href="#">Accessibility</a>
-                    <br/>
-                    <a href="#" class="cookie">Cookies</a>
-                </div>
-                <div class="flex gap-1.5 justify-center items-center border border-[1px] border-white rounded-3xl w-[5.6rem] py-0.5 ml-3 transform transition-transform hover:scale-[103%] ">
-                    <img width="15" height="15" src="https://img.icons8.com/pastel-glyph/64/FFFFFF/globe.png" alt="globe"/>
-                    <span>English</span>
-                </div>
-            </div>
-        </section>
-        <!-- left sidebar end -->
-       
-        <section class="w-[75vw]">
-            <!-- top navigation and signup section start -->
-            <div class="flex justify-between items-center px-12 h-[12%] bg-[#111111] rounded-t-lg">
-            <!-- navigation section start -->
-             <div class="flex gap-2">
-               <div class="bg-[#0a0a0a] p-2 rounded-full"> <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/FFFFFF/less-than.png" alt="less-than"/></div>
-               <div class="bg-[#0a0a0a] p-2 rounded-full"><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/FFFFFF/more-than.png" alt="more-than"/></div>
-             </div>
-            <!-- navigation section start -->
-            <!-- Login signup section start -->
-             <div class="flex items-center gap-10 font-bold text-[16px]">
-                <span class="transform transition-transform hover:scale-[105%]">Sign Up</span>
-                <div class="bg-white rounded-3xl py-3 px-6 text-black transform transition-transform hover:scale-[105%]">Login</div>
-             </div>
-            <!-- Login signup section start -->
-            </div>
-            <!-- top navigation and signup section end -->
+            <img
+              width="15"
+              height="15"
+              src="https://img.icons8.com/ios-glyphs/30/FFFFFF/plus-math.png"
+              alt="plus-math"
+            />
+          </div>
+          <!-- your library section end -->
+          <div
+            class="flex flex-col gap-2 p-4 rounded-lg bg-[#242424] text-white"
+          >
+            <span class="">Create your first playlist</span>
+            <span class="">Easy! We will help you</span>
+            <button
+              class="bg-white text-black rounded-3xl w-[50%] px-1 py-1 mt-3 transform transition-transform hover:scale-[107%]"
+              type="button"
+            >
+              Create Playlist
+            </button>
+          </div>
+          <div class="links_container flex gap-5 flex-wrap text-white p-4 pl-4">
+            <a href="#">Legal</a>
+            <a href="#">Safety & Privacy Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">About Ads</a>
+            <a href="#">Accessibility</a>
+            <br />
+            <a href="#" class="cookie">Cookies</a>
+          </div>
+          <div
+            class="flex gap-1.5 justify-center items-center border border-[1px] border-white rounded-3xl w-[5.6rem] py-0.5 ml-3 transform transition-transform hover:scale-[103%]"
+          >
+            <img
+              width="15"
+              height="15"
+              src="https://img.icons8.com/pastel-glyph/64/FFFFFF/globe.png"
+              alt="globe"
+            />
+            <span>English</span>
+          </div>
+        </div>
+      </section>
+      <!-- left sidebar end -->
 
-            <!-- main content section start -->
-            <div class="h-[88%]  rounded-b-lg"></div>
-            <!-- main content section end -->
+      <section class="w-[75vw]">
+        <!-- top navigation and signup section start -->
+        <div
+          class="flex justify-between items-center px-12 h-[12%] bg-[#111111] rounded-t-lg"
+        >
+          <!-- navigation section start -->
+          <div class="flex gap-2">
+            <div class="bg-[#0a0a0a] p-2 rounded-full">
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/ios-filled/50/FFFFFF/less-than.png"
+                alt="less-than"
+              />
+            </div>
+            <div class="bg-[#0a0a0a] p-2 rounded-full">
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/ios-filled/50/FFFFFF/more-than.png"
+                alt="more-than"
+              />
+            </div>
+          </div>
+          <!-- navigation section start -->
+          <!-- Login signup section start -->
+          <div class="flex items-center gap-10 font-bold text-[16px]">
+            <span class="transform transition-transform hover:scale-[105%]"
+              >Sign Up</span
+            >
+            <div
+              class="bg-white rounded-3xl py-3 px-6 text-black transform transition-transform hover:scale-[105%]"
+            >
+              Login
+            </div>
+          </div>
+          <!-- Login signup section start -->
+        </div>
+        <!-- top navigation and signup section end -->
 
-        </section>
+        <!-- main content section start -->
+        <div class="h-[88%] rounded-b-lg bg-gradient-to-b from-[#1F1F1F] to-[#101010]">
+        <!-- Popular artists section start -->
+            <div class="flex flex-col gap-4 px-6 py-8">
+                <div class="flex justify-between items-end">
+                    <span class="text-white text-[23px] font-bold tracking-tight transform transition-transform hover:underline">Popular artists</span>
+                    <span class="tracking-tight text-[14px] font-semibold transform transition-transform hover:underline">Show all</span></div>
+                <div>
+                    <!-- cards section start -->
+                    <div>
+                  
+                         <img width="150" height="150" src="https://i.pinimg.com/originals/cc/23/b2/cc23b24496664f876a8f0ccfa8d06163.jpg" alt="">
+                     
+                        <div></div>
+                    </div>
+                    <!-- card section end -->
+                </div>
+            </div>
+
+        <!-- Popular artists section ends -->
+        </div>
+        <!-- main content section end -->
+      </section>
     </div>
     <!-- page main container end -->
-</body>
+  </body>
 </html>
-
